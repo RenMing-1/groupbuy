@@ -8,8 +8,8 @@ from sqlalchemy import or_
 
 from application import app, db
 
-@route_account.route("/index/")
-def index():
+@route_account.route("/user/")
+def user():
     resq = {}
     req = request.values
     query = User.query
